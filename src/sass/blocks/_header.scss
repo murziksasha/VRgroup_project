@@ -1,4 +1,138 @@
-.header{
-    color:#fff;
-    
+.header {
+
+    &__wrapper {
+        padding-top: 30px;
+        text-align: center;
+    }
+    nav {
+        margin-bottom: 40px;
+    }
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 505px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__phone {
+        img {
+            margin-right: 8px;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            
+        }
+    }
 }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+
+        
+    }
+
+    &__img {
+        position: relative;
+
+        &_w {
+            width: 119.57px;
+            height: 120.49px;
+        }
+        &_a {
+            width: 106px;
+            height: 106px;
+            position: relative;
+            left: -174px;
+            top: 139px;
+        }
+        &_book{
+            position: relative;
+            top: -565px;
+            left: 25px;
+        }
+        &_five{
+            position: relative;
+            top: -371px;
+            left: 231px;
+            z-index: -20;
+        }
+        &_pen {
+            position: relative;
+            top: -845px;
+            left: 408px;
+        }
+        &_books {
+            position: relative;
+            top: -923px;
+            left: 588px;
+            z-index: -20;
+        }
+    }
+
+    &__header {
+        text-align: start;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        margin-bottom: 44px;
+        span {
+            font-size: 48px;
+            line-height: 59px;
+            color: #018FA3;
+            text-transform: uppercase;
+        }
+    }
+
+    &__describe {
+        text-align: start;
+        max-width: 530px;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 44px;
+    }
+
+    &__btn {
+        width: 244px;
+        height: 64px;
+        background: #FAE01A;
+        box-shadow: 0px 20px 40px -27px rgba(0, 0, 0, 0.15);
+        border-radius: 30px;
+        border: none;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+
+    }
+
+    &__present {
+        position: relative;
+        img {
+            margin-right: 35px;
+        }
+        &_img {
+            position: relative;
+            top: -843px;
+            left: 84px;
+            z-index: -10;
+        }
+    }
+
+
+}
+
