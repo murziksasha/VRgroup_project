@@ -1,4 +1,5 @@
 .header {
+    margin-bottom: 127px;
 
     &__wrapper {
         padding-top: 30px;
@@ -43,6 +44,7 @@
     }
 
     &__content {
+        max-height: 749px;
 
         
     }
@@ -121,6 +123,7 @@
     }
 
     &__present {
+        max-height: 749px;
         position: relative;
         img {
             margin-right: 35px;
