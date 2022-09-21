@@ -1,0 +1,23 @@
+
+
+.price {
+  background-color: #f6faff;
+
+  &__wrapper {
+    padding: 68px 120px 80px;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 68px;
+  }
+  &__wrapper-card{
+    display: flex;
+    gap: 40px;
+
+  }
+}
+
