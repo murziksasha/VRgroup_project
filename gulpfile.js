@@ -40,13 +40,20 @@ function html() {
 
 function scripts(){
     return src([
-        'node_modules/jquery/dist/jquery.js',
         'src/js/main.js'
     ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(dest('src/js'))
     .pipe(browserSync.stream())
+}
+
+function uglifyDist() {
+    return src([
+        'dist/js/**/*.js',
+    ])
+    .pipe(uglify())
+    .pipe(dest('dist/js'))
 }
 
 
@@ -67,7 +74,8 @@ function build(){
     return src([
         'src/css/style.min.css',
         'src/fonts/**/*',
-        'src/js/main.min.js',
+        'src/js/**/*.js',
+        'src/img/**/*',
     ],{base: 'src'})
     .pipe(dest('dist'))
 }
@@ -86,7 +94,7 @@ exports.cleanDist = cleanDist;
 exports.html = html;
 
 
-exports.build = series(cleanDist,html, build);
+exports.build = series(cleanDist,html, build, uglifyDist);
 
 
 exports.default = parallel(styles,scripts,syncBrowser, watching);
