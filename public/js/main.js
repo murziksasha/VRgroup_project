@@ -4,11 +4,10 @@ import forms from "./form.js";
 import mail from "./services/mail.js";
 
 
-
+"use strict"
 
 
 document.addEventListener('DOMContentLoaded',()=>{
-  "use strict";
   
   slider();
   modal_form();
