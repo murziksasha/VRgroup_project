@@ -286,12 +286,11 @@
                     <div class="contacts__header_consultation">
                         <div class="contacts__header_subtitle">Заполните заявку</div>
                         <div class="contacts__header_descr">и мы свяжемся с Вами</div>
-                        <form class="form" action="#" class="feed-form">
+                        <form class="form" method="post">
                             <input name="name" required placeholder="Ваше Имя" type="text">
                             <input name="phone" required placeholder="Ваш Телефон" type="number">
                             <input name="email" required placeholder="Ваш E-mail" type="email">
-
-                            <textarea name="message"  class="message" form  placeholder="Ваше сообщение..." rows="8"></textarea>
+                            <input name="texts" type="text"  class="message" placeholder="Ваше сообщение">
         
                             <button class="modal__btn btn">отправить</button>
                         </form>
@@ -332,11 +331,11 @@
                 <div class="modal__close">&times;</div>
                 <div class="modal__subtitle">Заполните форму заявки</div>
                 <div class="modal__descr">и мы свяжемся с Вами</div>
-                <form class="form" method="post" class="feed-form">
+                <form class="form" method="post">
                     <input name="name" required placeholder="Ваше Имя" type="text">
                     <input name="phone" required placeholder="Ваш Телефон" type="number">
                     <input name="email" required placeholder="Ваш E-mail" type="email">
-                    <textarea name="message"  class="message" form  placeholder="Ваше сообщение..." rows="8"></textarea>
+                    <input name="texts" type="text"  class="message" placeholder="Ваше сообщение">
 
                     <button class="modal__btn btn" name="submit">отправить</button>
                 </form>
