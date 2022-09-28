@@ -6,6 +6,7 @@ const forms = () => {
 
   
     phoneInputs.forEach(item => {
+
         item.addEventListener('input', () => {
             item.value = item.value.replace(/\D/, '');
         });
@@ -37,10 +38,8 @@ const forms = () => {
     };
   
     form.forEach(item => {
-        item.addEventListener('click', (e) => {
+        item.addEventListener('submit', (e) => {
             e.preventDefault();
-
-
   
             let statusMessage = document.createElement('div');
             statusMessage.classList.add('status');

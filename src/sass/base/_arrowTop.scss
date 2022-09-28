@@ -1,0 +1,25 @@
+.back_to_top {
+  position: fixed;
+  bottom: 80px;
+  right: 115px;
+  z-index: 9999;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: lightblue;
+  color: #444;
+  cursor: pointer;
+  border-radius: 2px;
+  display: none;
+  transition: all .5s ease;
+  border-radius: 50%;
+}
+
+.back_to_top:hover {
+  background: #e9ebec;
+}
+
+.back_to_top-show {
+  display: block;
+}

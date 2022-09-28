@@ -47,6 +47,7 @@
     }
 
     &_img {
+      border-radius: 50px;
     }
 
     &_borders {
@@ -66,12 +67,13 @@
 
 
     &_img {
+      border-radius: 50px;
     }
 
     &_borders {
       position: absolute;
-      top: 29px;
-      left: -31px;
+      top: 31px;
+      left: -50px;
       z-index: -1;
 
     }

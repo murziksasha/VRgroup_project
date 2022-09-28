@@ -1,26 +1,584 @@
+@media (max-width: 1660px){
+  .header{
+    &__present img{
+      margin-right: 70px;
+    }
+  }
+  .services{
+    &__main-up{
+      &_circle{
+        left: -30px;
+      }
+    }
+    &__main-down{
+      padding: 0 30px;
+      &_borders{
+        left: -8px;
+      }
+      &_rectangle{
+        left: 25px;
+      }
+      &_circle{
+        left: 293px;
+      }
+    }
+  }
+  .contacts{
+    &__wrapper{
+      padding-left: 60px;
+    }
+    &__header{
+      gap: 50px;
+    }
+    &__img {
+      &_yellow {
+        left: -928px;
+
+      }
+    }
+  }
+}
+
+@media (max-width: 1660px){
+
+}
+
 @media (max-width: 1200px){
   .wrapper {
     max-width: 960px;
   }
+  .header{
+    &__img{
+      &_a{
+      top: -64px;
+      }
+      &_book{
+        top: -776px;
+        left: 0px;
+      }
+      &_five {
+        top: -897px;
+        left: 325px;
+      }
+        &_pen{
+          top: -1366px;
+          left: 38px;
+        }
+        &_books{
+          top: -1531px;
+          left: 475px;
+        }
+   }
+    .menu{
+      &__items{
+        justify-content: space-around;
+        font-size: 23px;
+      }
+      &__phone{
+        width: 200px;
+        & a{
+          font-size: 20px;
+        }
+      }
+    }
+
+  }
+
+  .services{
+    &__main-up{
+      &_img{
+        position: relative;
+        left: 166px;
+      }
+      &_borders{
+        left: 661px;
+      }
+    }
+    &__main-down{
+      &_borders{
+        left: -30px;
+      }
+    }
+  }
+
+  .price{
+    &__wrapper{
+      max-width: 100%;
+    }
+    &-card{
+      &__descr{
+        font-size: 29px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  .slider {
+    .my-slider {
+        &__item {
+          max-width: 290px;
+          min-height: 285px;
+          margin-right: 27px;
+        }
+    
+        &__header {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 10px;
+          &_title {
+            font-size: 24px;
+            line-height: 28px;
+          }
+        }
+    
+        &__descr {
+          font-size: 22px;
+          line-height: 24px;
+        }
+        
+    }
+  }
+
+  .contacts{
+    &__header{
+      justify-content: space-between;
+      gap: 25px;
+    }
+  }
+
 }
 
 @media (max-width: 991px){
+  .back_to_top {  
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+  }
   .wrapper {
     max-width: 720px;
   }
+
+  .header{
+    .menu{
+      &__phone{
+        position: absolute;
+        top: 33px;
+        left: 1111px;
+        width: 216px;
+      }
+    }
+  }
+
+  .services{
+    padding-top: 90px;
+    &__main-up{
+      &_img{
+        left: 124px;
+      }
+      &_borders{
+        left: 615px;
+      }
+      &_descr{
+        width: 310px;
+      }
+    }
+    &__main-down{
+      &_borders{
+        left: -30px;
+      }
+      &_descr{
+        width: 310px;
+      }
+    }
+  }
+
+  .advantages{
+    &__img{
+      position: relative;
+      left: 142px;
+    }
+    &__descr{
+      position: relative;
+      left: 142px;
+      top: 20px;
+    }
+  }
+
+  .price{
+    &__wrapper{
+      max-width: 100%;
+    }
+  }
+
+  .feedback{
+    &__wrapper {
+      max-width: 990px;
+    }
+
+    .slider {
+      .my-slider {
+          &__item {
+            margin-right: 20px;
+          }          
+      }
+      #tns1 > .tns-item{
+        min-width: 300px;
+      }
+    }
+  }
+
+  .contacts{
+    &__header{
+      flex-direction: column;
+      gap: 50px;
+    }
+    &__info{
+      width: 650px;
+      height: 573px;
+
+    }
+    &__descr{
+      font-size: 34px;
+      &_thin{
+        font-size: 34px;
+      }
+    }
+    &__header_consultation{
+      width: 650px;
+      height: 573px;
+    }
+    .form input{
+      height: 65px;
+      font-size: 25px;
+    }
+    &__img_yellow{
+      left: -81px;
+    }
+    &__img_blue{
+      left: 544px;
+    }
+  }
+
+  .footer{
+    &__content{
+      justify-content: space-between;
+    }
+
+    &__copy-right{
+      display: none;
+    }
+  }
+
+  .modal{
+    width: 645px;
+    &__subtitle{
+      font-size: 25px;
+    }
+    &__descr{
+      font-size: 22px;
+      margin-bottom: 25px;
+    }
+    form{
+      gap: 55px;
+      input{
+        height: 57px;
+        font-size: 25px;
+      }
+    }
+  }
+
+
 }
 
 @media (max-width: 767px){
+  .back_to_top {  
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+  }
+
   .wrapper {
     max-width: 540px;
   }
- 
+
+  .header{
+    &__img{
+      &_a{
+        top: -98px;
+      }
+    }
+    &__btn {
+      font-size: 23px;
+    }
+    .menu{
+      &__items{
+        font-size: 25px;
+      }
+      &__phone{
+        left: 1200px;
+        width: 235px;
+        & a{
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .advantages{
+    &__img{
+      left: 230px;
+    }
+    &__descr{
+      left: 230px;
+      font-size: 28px;
+    }
+  }
+
+  .price{
+    background: #fff;
+    &__wrapper{
+      max-width: 100%;
+      margin-left: 50px;
+    }
+  }
+
+  .feedback{
+    &__wrapper {
+      max-width: 990px;
+    }
+
+    .slider {
+      .my-slider {
+          &__item {
+            margin-right: 26px;
+          }          
+      }
+      #tns1 > .tns-item{
+        min-width: 300px;
+      }
+    }
+  }
+
+  .contacts{
+    &__img_blue {
+      left: 360px;
+    }
+    &__wrapper{
+      margin-left: 391px;
+    }
+  }
+
+  .footer{
+    padding-left: 200px;
+
+    &__logo{
+      display: none;
+    }
+  }
+
+  .modal{
+    width: 845px;
+    &__subtitle{
+      font-size: 35px;
+    }
+    &__descr{
+      font-size: 28px;
+    }
+    form{
+      gap: 65px;
+      input{
+        height: 67px;
+        font-size: 25px;
+      }
+    }
+  }
 }
 
 @media (max-width: 575px){
   .wrapper {
     width: 100%;
     padding: 0 10px;
+  }
+
+  .header{
+    
+    &__header {
+      margin-top: 150px;
+      font-size: 40px;
+      & span {
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+    }
+    &__describe {
+      font-size: 35px;
+      line-height: 39px;
+    }
+
+    .menu {
+      &__items{
+        font-size: 28px;
+      }
+      &__logo{
+      display: none;
+      }
+      &__phone{
+        top: 164px;
+        left: 581px;
+        width: 293px;
+        & a {
+          font-size: 29px;
+        }
+      }
+    }
+  }
+
+  .services{
+    padding-top: 497px;
+  }
+
+  .advantages{
+    padding-top: 50px;
+  }
+
+  .price{
+    padding-top: 275px;
+  }
+
+  .contacts{
+    &__wrapper{
+      padding-top: 55px;
+      margin-left: 482px;
+    }
+  }
+
+  .footer{
+    padding-left: 0;
+  }
+
+  .modal{
+    width: 1045px;
+    &__subtitle{
+      font-size: 40px;
+    }
+    &__descr{
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+    form{
+      gap: 70px;
+      input{
+        height: 87px;
+        font-size: 29px;
+      }
+    }
+  }
+   
+}
+
+@media (max-width: 411px){
+  .wrapper {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .header{
+    &__present {
+      & img{
+        display: none;
+      }
+    }
+    &__header{
+      margin-top: 90px;
+    }
+    &__describe{
+      font-size: 28px;
+      line-height: 32px;
+      margin-bottom: -48px;
+    }
+    &__img{
+      &_w{
+        display: none;
+      }
+      &_book{
+        display: none;
+      }
+      &_five{
+        display: none;
+      }
+      &_books{
+        display: none;
+      }
+      &_a{
+        display: none;
+      }
+    }
+    &__describe{
+      font-size: 34px;
+    }
+    &__btn {
+      font-size: 28px;
+      width: 269px;
+      height: 70px;
+    }
+
+    .menu{
+      &__phone{
+        top: 75px;
+      }
+    }
+  }
+
+  .services{
+    padding-top: 16px;
+    &__main-up{
+      flex-direction: column;
+      &_img{
+        position: unset;
+      }
+      &_descr{
+        width: 401px;
+        font-size: 30px;
+        line-height: 35px;
+      }
+      &_borders{
+        display: none;
+      }
+    }
+    &__main-down{
+      flex-direction: column-reverse;
+      &_borders{
+        display: none;
+      }
+      &_descr{
+        width: 401px;
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+  }
+
+  .advantages{
+    display: none;
+  }
+
+  .price{
+    &__wrapper-card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+    }
+  }
+
+  .footer{
+    display: none;
+  }
+
+  .contacts__map{
+    display: none;
   }
    
 }
