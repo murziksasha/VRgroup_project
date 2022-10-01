@@ -1,0 +1,1 @@
+const checkinputs=e=>{document.querySelectorAll(e).forEach((e=>{e.addEventListener("keypress",(e=>{e.key.match(/[^a-z 0-9 @ \.]/gi)&&e.preventDefault()}))}))};export default checkinputs;

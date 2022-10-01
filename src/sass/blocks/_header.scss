@@ -50,6 +50,7 @@
 
     &__content {
         max-height: 749px;
+        
 
         
     }
@@ -70,24 +71,24 @@
         }
         &_book{
             position: relative;
-            top: -565px;
-            left: 25px;
+            top: -626px;
+            left: 25px;        
         }
         &_five{
             position: relative;
-            top: -371px;
-            left: 231px;
+            top: -706px;
+            left: 465px;
             z-index: -20;
         }
         &_pen {
             position: relative;
-            top: -845px;
-            left: 408px;
+            top: -807px;
+            left: 68px;
         }
         &_books {
             position: relative;
-            top: -1003px;
-            left: 559px;
+            top: -1367px;
+            left: 602px;
             z-index: -20;
         }
     }
@@ -111,7 +112,7 @@
         max-width: 530px;
         font-size: 24px;
         line-height: 29px;
-        margin-bottom: 44px;
+        margin-bottom: -31px;
     }
 
     &__btn {
