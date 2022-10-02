@@ -17,7 +17,12 @@
   &__wrapper-card{
     display: flex;
     gap: 40px;
-
+  }
+  &-card{
+    &__descr{
+      font-size: 30px;
+      line-height: 35px;
+    }
   }
 }
 
