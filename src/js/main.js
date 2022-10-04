@@ -18,6 +18,14 @@ document.addEventListener('DOMContentLoaded',()=>{
   mask('[name="phone"]');
   checkinputs('[name="email"]');
 
+  const btn = document.querySelector('.menu-btn');
+  const nav = document.querySelector('nav.nav');
+
+
+  btn.addEventListener('click', ()=> {
+    nav.classList.toggle('menu-open');
+  })
+
     //array to UP 
     (function() {
       'use strict';

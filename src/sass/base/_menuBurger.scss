@@ -1,0 +1,51 @@
+.menu-btn {
+	display: none;
+	width: 40px;
+	height: 50px;
+	background-color: transparent;
+	order: 1;
+	border: none;
+	cursor: pointer;
+	position: relative;
+}
+
+.btn-line {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background-color: #018fa3;
+	height: 2px;
+	transition: .5s ease all;
+}
+
+.btn-line:nth-child(1) {
+	top: 0;
+}
+
+.btn-line:nth-child(2) {	
+	top: 10px;
+}
+
+.btn-line:nth-child(3){
+	top: 10px;
+}
+
+.btn-line:nth-child(4){
+	top: 20px;
+}
+
+.menu-open .btn-line:nth-child(1){
+	transform: scaleX(0);
+}
+
+.menu-open .btn-line:nth-child(2){
+	transform: rotate(45deg);
+}
+
+.menu-open .btn-line:nth-child(3){
+	transform: rotate(-45deg);
+}
+
+.menu-open .btn-line:nth-child(4){
+	transform: scaleX(0);
+}

@@ -1,9 +1,4 @@
 @media (max-width: 1660px){
-  .header{
-    &__present img{
-      margin-right: 70px;
-    }
-  }
   .services{
     &__wrapper{
       padding: 0 40px;
@@ -56,6 +51,16 @@
 }
 
 @media (max-width: 1313px){
+  .header__img{
+    &_books{
+      top: -1436px;
+      left: 518px;
+    }
+    &_five{
+      top: -771px;
+      left: 465px;
+    }
+  }
   .services{
     &__main-up{
       &_borders{
@@ -100,36 +105,67 @@
     max-width: 960px;
   }
   .header{
+    &__header{
+      font-size: 40px;
+      & span{
+        font-size: 40px;
+      }
+    }
+    &__present {
+      &_main{
+        position: relative;
+        top: -25px;
+        left: -34px;
+        transform: skewY(-2deg);
+      }
+      &_img{
+        position: absolute;
+        top: -114px;
+        left: -50px;
+      }
+    }
     &__img{
+      z-index: -30;
       &_a{
       top: -64px;
       }
       &_book{
+        z-index: -30;
         top: -776px;
         left: 0px;
       }
       &_five {
         top: -897px;
-        left: 325px;
+        left: 259px;
       }
         &_pen{
           top: -1366px;
           left: 38px;
         }
         &_books{
-          top: -1531px;
-          left: 475px;
+          top: -1610px;
+          left: 439px;
         }
-   }
+      }
     .menu{
       gap: 18px;
       &__items{
         justify-content: space-around;
         font-size: 20px;
+        margin-right: 25px;
+      }
+      &__phone{
+        position: absolute;
+        top: 146px;
+        left: 123px;
+        width: 293px;
+        & a {
+          font-size: 28px;
+        }
       }
     }
 
-  }
+
 
   .services{
     &__main-up{
@@ -194,6 +230,7 @@
     }
   }
 
+  }
 }
 
 @media (max-width: 991px){
@@ -209,10 +246,7 @@
   .header{
     .menu{
       &__phone{
-        position: absolute;
-        top: 33px;
-        left: 868px;
-        width: 216px;
+
       }
     }
   }
@@ -367,13 +401,6 @@
       &__items{
         font-size: 25px;
       }
-      &__phone{
-        left: 858px;
-        width: 235px;
-        & a{
-          font-size: 22px;
-        }
-      }
     }
   }
 
@@ -457,10 +484,9 @@
   }
 
   .header{
-    
     &__header {
       margin-top: 74px;
-      font-size: 30px;
+      font-size: 29px;
       line-height: 38px;
       & span {
         display: inline-block;
@@ -468,12 +494,23 @@
         font-size: 40px;
       }
     }
-    &__describe {
-      font-size: 28px;
+    &__present {
+      width: 0%;
+      &_main{
+        left: -153px;
+      }
+      &_img{
+        left: -205px;
+      }
+    }
+    &__describe{
+      font-size: 24px;
       line-height: 39px;
+      max-width: 380px;
     }
     &__btn{
-      margin-top: 124px;
+      margin-top: 71px;
+      margin-right: 214px;
     }
     &__img{
       &_w{
@@ -486,27 +523,45 @@
         display: none;
       }
       &_pen{
-        top: -743px;
-        left: 174px;
+        top: -707px;
+        left: -74px;
       }
       &_book{
-        top: -698px;
+        top: -622px;
       }
       &_books{
-        top: -1251px;
+        top: -1245px;
+        left: 385px;
       }
     }
 
     .menu {
+      &__lang{
+        display: block;
+        position: absolute;
+        top: 39px;
+        left: 631px;
+        font-size: 22px;
+      }
+      &-btn{
+        position: absolute;
+        display: inline-block;
+        right: -308px;
+        .btn-line{
+        }
+      }
+
+
       &__items{
-        font-size: 28px;
+        display: none;
       }
       &__logo{
-      display: none;
+
       }
       &__phone{
-        top: 95px;
-        left: 153px;
+        position: absolute;
+        top: 26px;
+        left: 324px;
         width: 293px;
         & a {
           font-size: 29px;
@@ -562,13 +617,31 @@
    
 }
 
+@media (max-width: 473px){
+  .header {
+    .menu{
+      &-btn{
+        right: -381px;
+      }
+    }
+
+  }
+}
+
 @media (max-width: 411px){
+  .container{
+    width: 100%;
+  }
   .wrapper {
     max-width: 442px;
     padding: 0 10px;
   }
 
   .header{
+    &__wrapper {
+      text-align: center;
+      padding-top: 10px;
+    }
     &__present {
       & img{
         display: none;
@@ -576,17 +649,23 @@
     }
     &__header{
       margin-top: 24px;
-      font-size: 22px;
+      margin-bottom: 24;
+      font-size: 20px;
       line-height: 24px;
+      width: 173%;
       & span {
-        font-size: 31px;
-        line-height: 30px;
+        font-size: 21px;
+        line-height: 29px;
       }
+    }
+    &__content{
+      max-width: 200px;
     }
     &__describe{
       font-size: 20px;
       line-height: 22px;
       margin-bottom: -48px;
+      width: 181%;
     }
     &__img{
       &_w{
@@ -609,28 +688,36 @@
       }
     }
     &__btn {
-      font-size: 28px;
-      width: 269px;
-      height: 70px;
-      margin-top: 84px;
+      font-size: 15px;
+      max-width: 155px;
+      height: 41px;
+      margin: 74px;
     }
 
     .menu{
-      font-size: 21px;
-      &__phone{
-        top: 42px;
-        left: 67px;
+      justify-content: start;
+      &-btn {
+        right: 32px;
+        top: 14px;
+        width: 25px;
       }
-      &__items{
-        font-size: 28px;
-        margin-top: 140px;
-        justify-content: start;
-        gap: 20px;
-        & li:nth-child(1){
-          display: none;
+      &__lang{
+        left: 291px;
+        top: 22px;
+        font-size: 14px;
+        z-index: 10;
+      }
+      &__phone{
+        top: 70px;
+        left: 41px;
+        & a{
+          font-size: 18px;
+          max-width: 175px;
+          margin: 0 auto;
         }
-        & li:nth-child(3){
-          display: none;
+        & img{
+          width: 30px;
+          height: 30px;
         }
       }
     }
@@ -788,4 +875,34 @@
   }
   
    
+}
+
+@media (max-width: 370px){
+  .header{
+    .menu{
+      &__lang{
+        left: 345px;
+      }
+    }
+  }
+}
+
+@media (max-width: 333px){
+  .menu{
+
+  }
+  .header{
+    &__header{
+      margin-top: 35px;
+    }
+    .menu{
+      &__logo{
+        display: none;
+      }
+      &__phone{
+        top: 43px;
+        left: -15px;
+      }
+    }
+  }
 }
