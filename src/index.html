@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en ru">
+<html lang="ru en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>Интеграция POS терминалов</title>
     <link rel="shortcut icon" href="./img/icons/favicon.ico" type="image/x-icon">
     <!-- Primary Meta Tags -->
-    <title>VR Group — лидер автоматизации бизнеса</title>
-    <meta name="title" content="VR Group — лидер автоматизации бизнеса">
+    <meta name="title" content="VR Group — Интеграция POS терминалов">
     <meta name="description" content="Автоматизация  Учета
     регламитированный, управленческий,
     финансовый учет">
@@ -35,32 +34,31 @@
 </head>
 <body>
     <noscript>
-        <span>Для корректного обображения страницы включите 
+        <span>Для корректного отображения страницы включите 
         поддержку JavaScript в настройках браузера</span>
     </noscript>
 
     <div class="container">
         <header class="header">
             <div class=" header__wrapper wrapper">
-                <div class="menu__lang"><a href="ua.html">UA</a></div>
-
                 <nav class="nav">
                     <div class="menu">
-                        <button class="menu-btn" type="button">
+                        <button class="menu-btn btn-burger" type="button">
                             <span class="btn-line"></span>
                             <span class="btn-line"></span>
                             <span class="btn-line"></span>
                             <span class="btn-line"></span>
                         </button>
-                        <div class="menu__logo"> <a href="#"><img src="./img/icons/logo.svg" ></img></a></div>
+                        <div class="menu__logo"> <a href="#"><img src="./img/icons/logo.svg" alt="logo" ></img></a></div>
                         <ul class="menu__items">
                             <li class="menu__item"><a href="#aboutUS">О нас</a></li>
                             <li class="menu__item"><a href="#priceUS">Тарифы</a></li>
 
                             <li class="menu__item"><a href="#feedUS">Отзывы</a></li>
                             <li class="menu__item"><a href="#contactUS">Контакты</a></li>
-                            <li class="menu__item"><a href="ua.html">UA</a></li>
+                            <!-- <li class="menu__item"><a href="ua.html">UA</a></li> -->
                         </ul>
+                        <div class="menu__lang" id="pushLangSecond">UA</div>
                         <div class="menu__phone">
                             <a href="tel:80985861558"><img src="./img/icons/phone.png" alt="phone"> (098) 586-15-58</a>
                         </div>
@@ -87,8 +85,8 @@
                 </div>
             </div>
         </header>
-<!-- 
-         <section class="services" id="aboutUS">
+
+         <div class="services" id="aboutUS">
             <div class="services__wrapper wrapper">
                 <div class="services__main">
                     <div class="services__main-up">
@@ -116,9 +114,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-         <section class="advantages">
+         <div class="advantages">
             <div class="advantages__wrapper wrapper">
                 <div class="advantages__main">
                     <div class="advantages__inner">
@@ -156,7 +154,7 @@
                     </div>
                 </div>
             </div>
-        </section>  
+        </div>  
 
         <section class="price" id="priceUS">
             <div class="wrapper__price wrapper">
@@ -171,7 +169,7 @@
                                 <br>
                                 Наши специалисты прийдут на помощь в любой момент, и помогут решить все возникшие проблемы с интеграцией</p>
     
-                            <button class="price-card__btn btn" data-modal="consultation"type="btn">Выбрать</button>
+                            <button class="price-card__btn btn" type="button" data-modal="consultation">Выбрать</button>
                             
 
                     </div>
@@ -180,11 +178,11 @@
                             <h3 class="price-card__title">приобретение</h3>
                         </div>
                             <h4 class="price-card__sum">80 000 грн</h4>
-                            <p class="price-card__descr">Покупка продукта даёт все примущества ежемесячной подписки, плюс: <br>- использование неограниченного количества терминалов
+                            <p class="price-card__descr">Покупка продукта даёт все преимущества ежемесячной подписки, плюс: <br>- использование неограниченного количества терминалов
                             <br>- бесплатная поддержка в течении 3-х месяцев
                             <br>- возможность самостоятельно вносить изменения в код обработки (передаем полностью исходный код продукта)</p>
     
-                            <button class="price-card__btn btn" data-modal="consultation" type="btn">Выбрать</button>
+                            <button class="price-card__btn btn" type="button" data-modal="consultation">Выбрать</button>
                     </div>
                 </div>
             </div>
@@ -269,7 +267,6 @@
             </div>
         </section>
 
- 
         <section class="contacts" id="contactUS">
             <div class="contacts__wrapper wrapper">
                 <div class="contacts__header">
@@ -328,7 +325,29 @@
             </div>
         </footer>
 
-        
+        <div class="menu-burger">
+            <div class="menu-burger__block">
+                <div class="menu-burger__close">
+                    <button class="menu-btn btn-burger" type="button">
+                        <span class="btn-line"></span>
+                        <span class="btn-line"></span>
+                        <span class="btn-line"></span>
+                        <span class="btn-line"></span>
+                    </button>
+                </div>
+                <nav>
+                    <ul class="menu-burger__list">
+                        <Li class="menu-burger__link"><a href="#aboutUS">О нас</a></Li>
+                        <Li class="menu-burger__link"><a href="#priceUS">Тарифы</a></Li>
+                        <Li class="menu-burger__link"><a href="#feedUS">Отзывы</a></Li>
+                        <Li class="menu-burger__link"><a href="#contactUS">Контакты</a></Li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-burger__overlay"></div>
+        </div>
+
+
         <div class="overlay hide">
             <div class="modal hide" id="consultation">
                 <div class="modal__close">&times;</div>
@@ -349,20 +368,9 @@
             <div class="array">
                 <a class="back_to_top" title="Наверх">↑</a>
             </div>
-        </div> -->
+        </div>
 
     </div>
-
-
-
-
- 
-
-
-
-
-
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script type="module" src="js/main.min.js"></script>

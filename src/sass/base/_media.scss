@@ -90,11 +90,46 @@
   }
 }
 
+@media (max-width: 1269px){
+  .price{
+    &-card{
+      &__descr{
+        font-size: 27px;
+        line-height: 33px;
+      }
+    }
+  }
+}
+
 @media (max-width: 1216px){
   .services{
     &__main-up{
       &_borders{
         left: 607px;
+      }
+    }
+  }
+}
+
+@media(max-width: 998px){
+  .price{
+    &-card{
+      &__descr{
+        min-height: 463px;
+        font-size: 27px;
+        line-height: 33px;
+      }
+    }
+  }
+}
+
+@media(max-width: 995px){
+  .price{
+    &-card{
+      &__descr{
+        min-height: 495px;
+        font-size: 27px;
+        line-height: 33px;
       }
     }
   }
@@ -231,17 +266,62 @@
   }
 
   }
+  .services{
+    &__main-up{
+      &_img{
+        position: relative;
+        left: 72px;
+      }
+      &_descr{
+        width: 140%;
+        font-size: 20px;
+      }
+      &_rectangle{
+        top: 82px;
+        left: 24px;
+        width: 365px;
+        height: 192px;
+      }
+      &_borders{
+        left: 488px;
+      }
+    }
+    &__main-down{
+      &_descr{
+        width: 200%;
+        width: 140%;
+        font-size: 20px;
+      }
+      &_rectangle{
+        top: 0px;
+        left: 21px;
+        width: 328px;
+        height: 192px;
+      }
+      &_circle{
+        left: 159px;
+        top: 72px;
+      }
+    }
+  }
+  .price{
+    &-card{
+      &__descr{
+        // min-height: 426px;
+        font-size: 27px;
+        line-height: 33px;
+      }
+    }
+  }
 }
 
 @media (max-width: 991px){
   .back_to_top {  
-    height: 50px;
-    width: 50px;
-    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
   }
-  .wrapper {
-    max-width: 720px;
-  }
+
 
   .header{
     .menu{
@@ -254,10 +334,10 @@
   .services{
     &__main-up{
       &_img{
-        left: 124px;
+        left: -6px;
       }
       &_borders{
-        left: 615px;
+        left: 480px;
       }
       &_descr{
         width: 310px;
@@ -286,14 +366,22 @@
   }
 
   .price{
+    &__wrapper-card{
+      flex-flow: column;
+      align-items: center;
+      width: 995px;
+    }
     &-card{
-      &__title{
-        font-size: 20px;
-      }
+      max-width: 77%;
       &__descr{
-        font-size: 24px;
-        line-height: 30px;
+        min-height: 311px;
       }
+    }
+    &__title{
+      position: relative;
+      top: 21px;
+      left: 53px;
+      font-size: 35px;
     }
   }
 
@@ -301,23 +389,35 @@
     &__wrapper {
       max-width: 990px;
     }
+    &__title{
+      text-align: end;
+      margin-right: 78px;
+    }
 
     .slider {
+      &__wrapper{
+        width: 995px;
+      }
       .my-slider {
           &__item {
             margin-right: 20px;
           }          
       }
       #tns1 > .tns-item{
-        min-width: 300px;
+        min-width: 355px;
+        padding-right: 50px;
       }
     }
   }
 
   .contacts{
+    &__wrapper{
+      width: 995px;
+    }
     &__header{
       flex-direction: column;
       gap: 50px;
+      align-items: center;
     }
     &__info{
       width: 650px;
@@ -347,12 +447,18 @@
   }
 
   .footer{
+    background: none;
     &__content{
-      justify-content: space-between;
+      justify-content: space-around;
     }
 
     &__copy-right{
       display: none;
+    }
+    &__menu_list {
+      & a {
+        color: #000;
+      }
     }
   }
 
@@ -382,6 +488,7 @@
     height: 60px;
     width: 60px;
     font-size: 30px;
+    line-height: 49px;
   }
 
   .wrapper {
@@ -404,6 +511,14 @@
     }
   }
 
+  .services{
+    &__main-up{
+      &_img{
+        left: 69px;
+      }
+    }
+  }
+
   .advantages{
     &__img{
       left: 230px;
@@ -415,19 +530,18 @@
   }
 
   .price{
-    background: #fff;
-    &__wrapper-card{
-      flex-flow: column;
-      align-items: center;
-    }
-    &-card{
-      max-width: 100%;
+    &__title{
+      left: 245px;
+      font-size: 27px;
     }
   }
 
   .feedback{
     &__wrapper {
       max-width: 990px;
+    }
+    &__title{
+      margin-right: -202px;
     }
 
     .slider {
@@ -447,13 +561,15 @@
       display: none;
     }
     &__wrapper{
-      margin-left: 23px;
+      margin-left: 275px;
     }
   }
 
   .footer{
-    padding-left: 200px;
-
+    &__wrapper{
+      width: 995px;
+    }
+    padding-left: 290px;
     &__logo{
       display: none;
     }
@@ -466,6 +582,10 @@
     }
     &__descr{
       font-size: 28px;
+    }
+    &__close {
+      right: -48px;
+      font-size: 59px;
     }
     form{
       gap: 65px;
@@ -484,6 +604,7 @@
   }
 
   .header{
+    margin-bottom: 25px;
     &__header {
       margin-top: 74px;
       font-size: 29px;
@@ -497,10 +618,10 @@
     &__present {
       width: 0%;
       &_main{
-        left: -153px;
+        left: -81px;
       }
       &_img{
-        left: -205px;
+        left: -127px;
       }
     }
     &__describe{
@@ -537,18 +658,15 @@
 
     .menu {
       &__lang{
-        display: block;
         position: absolute;
         top: 39px;
-        left: 631px;
+        left: 700px;
         font-size: 22px;
       }
       &-btn{
         position: absolute;
         display: inline-block;
-        right: -308px;
-        .btn-line{
-        }
+        right: -399px;
       }
 
 
@@ -571,9 +689,23 @@
   }
 
   .services{
+    &__main-up{
+      &_borders{
+        left: 452px;
+      }
+    }
     &__main-down{
       &_borders{
         left: -11px;
+      }
+      &_descr{
+        width: 288px;
+      }
+      &_rectangle{
+        width: 291px;
+      }
+      &_circle{
+        left: 136px;
       }
     }
   }
@@ -586,25 +718,30 @@
     padding-top: 275px;
   }
 
-  .contacts{
-    &__wrapper{
-      padding-top: 55px;
-      margin-left: 482px;
+  .feedback{
+    &__title{
+      margin-right: -350px;
     }
   }
 
   .footer{
-    padding-left: 0;
+    &__wrapper{
+      width: 995px;
+    }
   }
 
   .modal{
-    width: 1045px;
+    width: 927px;
     &__subtitle{
       font-size: 40px;
     }
     &__descr{
       font-size: 30px;
       margin-bottom: 35px;
+    }
+    &__close {
+      right: -57px;
+      font-size: 75px;
     }
     form{
       gap: 70px;
@@ -626,18 +763,31 @@
     }
 
   }
+
+  .price{
+    &__title{
+      left: 325px;
+      font-size: 27px;
+    }
+  }
+
+  .footer{
+    padding-left: 240px;
+  }
 }
 
 @media (max-width: 411px){
   .container{
     width: 100%;
   }
+
   .wrapper {
     max-width: 442px;
     padding: 0 10px;
   }
 
   .header{
+    margin-bottom: 6px;
     &__wrapper {
       text-align: center;
       padding-top: 10px;
@@ -743,6 +893,8 @@
       &_descr{
         font-size: 19px;
         line-height: 25px;
+        position: relative;
+        left: -82px;
       }
       &_borders{
         display: none;
@@ -759,15 +911,18 @@
       &_descr{
         font-size: 19px;
         line-height: 25px;
+        position: relative;
+        left: -87px;
       }
       &_img{
         width: 320px;
         position: absolute;
-        left: -22px;
-        top: 185px;
+        left: 0px;
+        top: 193px;
+        height: 225px;
       }
       &_circle{
-        left: 144px;
+        left: 27px;
         top: -34px;
       }
     }
@@ -778,20 +933,34 @@
   }
 
   .price{
+
+    padding-top: 155px;
+
     &__wrapper-card{
+      width: 330px;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: start;
       justify-content: space-between;
       gap: 25px;
     }
     &__title{
-      font-size: 41px;
+      font-size: 25px;
+      left: 0;
+      top: 46px;
     }
     &-card{
+      display: unset;
+      max-width: 100%;
+      &__header{
+        margin-bottom: 16px;
+      }
+
       &__descr{
+        min-height: 202px;
         font-size: 17px;
-        line-height: 18px;
+        line-height: 20px;
+        margin: 0;
         margin-bottom: 26px;
       }
       &__btn{
@@ -804,25 +973,7 @@
   }
 
   .feedback{
-    &__wrapper{
-      padding-top: 40px;
-    }
-    &__title{
-    font-size: 36px;
-    line-height: 37px;
-    margin-bottom: 20px;
-    }
-
-    .slider {
-      .my-slider {
-          &__item {
-            margin-right: 27px;
-          }          
-      }
-      #tns1 > .tns-item{
-        min-width: 276px;
-      }
-    }
+    display: none;
   }
 
   .footer{
@@ -831,7 +982,8 @@
 
   .contacts{
     &__wrapper{
-      margin-left: 10px;
+      padding-top: 20px;
+      margin-left: 5px;
     }
     &__info{
     width: 350px;
@@ -851,6 +1003,7 @@
     }
     &__header{
       &_consultation{
+        padding-top: 20px;
         width: 350px;
         height: 511px;
       }
@@ -863,18 +1016,57 @@
       }
     }
     .form input{
-      height: 55px;
+      height: 48px;
       font-size: 19px;
     }
   }
+
   .back_to_top{
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     font-size: 17px;
-    right: 191px;
+    line-height: 26px;
+    right: 10px;
   }
   
-   
+  .modal {
+    width: 326px;
+    height: 584px;
+    &__close {
+      right: -33px;
+      font-size: 48px;
+    }
+    &__descr {
+      display: none;
+    }
+    &__subtitle{
+      font-size: 24px;
+    }
+    & form{
+      gap: 27px;
+      & input{
+        height: 47px;
+        font-size: 19px;
+      }
+    }
+    &__btn{
+      margin-bottom: 38px;
+      height: 55px;
+    }
+  }
+
+  .menu-burger{
+    &__block{
+    width: 285px;
+    }
+    &__link{
+      margin-bottom: 50px;
+      margin-left: 33px;
+      &:nth-child(3){
+        display: none;
+      }
+    }
+  }
 }
 
 @media (max-width: 370px){
@@ -885,12 +1077,27 @@
       }
     }
   }
+  .contacts{
+    &__header{
+      padding-left: 33px;
+    }
+  }
+}
+@media (max-width: 348px){
+  .services{
+    &__main-up_img{
+      left: 19px;
+    }
+  }
+  .contacts{
+    &__header{
+      padding-left: 62px;
+    }
+  }
 }
 
 @media (max-width: 333px){
-  .menu{
 
-  }
   .header{
     &__header{
       margin-top: 35px;
@@ -903,6 +1110,15 @@
         top: 43px;
         left: -15px;
       }
+    }
+  }
+}
+
+@media (max-width: 304px){
+
+  .contacts{
+    &__header{
+      padding-left: 120px;
     }
   }
 }

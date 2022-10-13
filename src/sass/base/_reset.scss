@@ -46,6 +46,9 @@ table {
 // this is optional code, be careful!
 a {
 	text-decoration: none;
+	&:active, &:visited{
+		color: inherit;
+	}
 }
 button {
 	border: none;

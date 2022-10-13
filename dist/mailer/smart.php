@@ -14,12 +14,12 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'testovichmarket@gmail.com';                 // Наш логин
-$mail->Password = 'gqvlqtxcgquxmwjo';                           // Наш пароль от ящика
+$mail->Username = 'techmailerVRgroup@gmail.com';                 // Наш логин
+$mail->Password = 'fvhivkrvdynjsatg';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('testovichmarket@gmail.com', 'Project');   // От кого письмо 
+$mail->setFrom('techmailerVRgroup@gmail.com', 'Project');   // От кого письмо 
 $mail->addAddress('office@vrgroup.info');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
@@ -31,7 +31,7 @@ $mail->isHTML(true);                                  // Set email format to HTM
 
 $mail->Subject = 'Данные';
 $mail->Body    = '
-		Пользователь оставил данные <br> 
+		Клиент оставил данные <br> 
 	Имя: ' . $name . ' <br>
 	Номер телефона: ' . $phone . '<br>
 	E-mail: ' . $email . '<br>

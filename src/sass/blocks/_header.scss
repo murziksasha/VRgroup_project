@@ -14,7 +14,11 @@
     align-items: center;
 
     &__lang{
-        display: none;
+        cursor: pointer;
+        transition: all .5s ease;
+        &:hover{
+            transform: scale(1.2);
+        }
     }
 
     &__items {
@@ -135,6 +139,12 @@
     &__present {
         max-height: 749px;
         position: relative;
+        &_main{
+            position: relative;
+            top: -9px;
+            left: 64px;
+            transform: skew(-2deg);
+        }
         &_img {
             position: relative;
             top: -843px;
