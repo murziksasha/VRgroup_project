@@ -1,31 +1,13 @@
 <!DOCTYPE html>
-<html lang="en ru">
+<html lang="ru en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>Интеграция POS терминалов</title>
     <link rel="shortcut icon" href="./img/icons/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
     <!-- Primary Meta Tags -->
-    <title>VR Group — лидер автоматизации бизнеса</title>
-    <meta name="title" content="VR Group — лидер автоматизации бизнеса">
+    <meta name="title" content="VR Group — Интеграция POS терминалов">
     <meta name="description" content="Автоматизация  Учета
     регламитированный, управленческий,
     финансовый учет">
@@ -52,25 +34,33 @@
 </head>
 <body>
     <noscript>
-        <span>Для корректного обображения страницы включите 
+        <span>Для корректного отображения страницы включите 
         поддержку JavaScript в настройках браузера</span>
     </noscript>
 
     <div class="container">
-     <header class="header">
-            <div class="wrapper header__wrapper">
+        <header class="header">
+            <div class=" header__wrapper wrapper">
                 <nav class="nav">
                     <div class="menu">
-                        <div class="menu__logo"> <a href="#"><img src="./img/icons/logo.svg" ></img></a></div>
+                        <button class="menu-btn btn-burger" type="button">
+                            <span class="btn-line"></span>
+                            <span class="btn-line"></span>
+                            <span class="btn-line"></span>
+                            <span class="btn-line"></span>
+                        </button>
+                        <div class="menu__logo"> <a href="#"><img src="./img/icons/logo.svg" alt="logo" ></img></a></div>
                         <ul class="menu__items">
-                            <li class="menu__item"><a href="#">О нас</a></li>
-                            <li class="menu__item"><a href="#">Тарифы</a></li>
+                            <li class="menu__item"><a href="#aboutUS">О нас</a></li>
+                            <li class="menu__item"><a href="#priceUS">Тарифы</a></li>
 
-                            <li class="menu__item"><a href="#">Отзывы</a></li>
-                            <li class="menu__item"><a href="#">Контакты</a></li>
+                            <li class="menu__item"><a href="#feedUS">Отзывы</a></li>
+                            <li class="menu__item"><a href="#contactUS">Контакты</a></li>
+                            <!-- <li class="menu__item"><a href="ua.html">UA</a></li> -->
                         </ul>
+                        <div class="menu__lang" id="pushLangSecond">UA</div>
                         <div class="menu__phone">
-                            <a href="tel:80985861558"><img src="./img/icons/phone.png" alt="phone"> 8 (098) 586-15-58</a>
+                            <a href="tel:80985861558"><img src="./img/icons/phone.png" alt="phone"> (098) 586-15-58</a>
                         </div>
                     </div>
                 </nav>
@@ -89,52 +79,48 @@
 
                     </div>
                     <div class="header__present">
-                        <img src="./img/header/header_photo.png" alt="header__img">
+                        <img class = "header__present_main" src="./img/header/Ivan_Sidoruk.png" alt="header__img">
                         <img class="header__present_img" src="./img/header/header_oval.png" alt="oval">
                     </div>
                 </div>
             </div>
         </header>
 
-        <section class="services">
+         <div class="services" id="aboutUS">
             <div class="services__wrapper wrapper">
                 <div class="services__main">
                     <div class="services__main-up">
                         <div class="services__main-up_wrapper">
                         <img class="services__main-up_circle" src="./img/services/circle.png" alt="circle">
                         <img class="services__main-up_rectangle" src="./img/services/Rectangle_big.png" alt="rectangle">
-                        <p class="services__main-up_descr">В нашем центре работают профессиональные педагоги любящие детей и преданные своему делу. Мы помогаем детям совершенствовать свои интеллекуальные способности чтобы они могли  познавать мир и делать его более красивым и добрым. </p>
+                        <p class="services__main-up_descr">VR Group – это молодая команда профессионалов. Мы решаем проблемы клиентов. Каждая наша доработка приносит максимальную пользу каждому клиенту. </p>
                         </div>
                         <div class="service__main-up_wrap-img">
-                            <img src="./img/services/service_foto_1.png" alt="photo_1" class="services__main-up_img">
+                            <img src="./img/services/service_foto_1.jpg" alt="photo_1" class="services__main-up_img">
                             <img src="./img/services/Rectangle_dashed.png" alt="border_img" class="services__main-up_borders">
                         </div>
                     </div>
                     <div class="services__main-down">
-                        <img src="./img/services/service_foto_2.png" alt="photo_2" class="services__main-down_img">
+                        <img src="./img/services/service_foto_2.jpg" alt="photo_2" class="services__main-down_img">
                         <img src="./img/services/Rectangle_dashed.png" alt="border_img" class="services__main-down_borders">
                         <div class="services__main-down_wrapper">
                             <div class="services__main-down_wrap-img">
                                 <img class="services__main-down_circle" src="./img/services/circle_2.png" alt="circle">
                                 <img class="services__main-down_rectangle" src="./img/services/Rectangle_small.png" alt="rectangle">
                             </div>
-                            <p class="services__main-down_descr">Наши ученики показывают результат уже с первого месяца работы, мы поддерживаем в нашем центре теплую и дружескую атмосферу 
-                                Побывав у нас детям обязательно захочется вернуться сюда снова
-                                 Развивайтесь вместе с нами
+                            <p class="services__main-down_descr"> Среди наших кейсов – построение целостных систем для бесперебойной работоспособности бизнеса. В нашем портфолио более 100 довольных клиентов.
                                 </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="advantages">
+         <div class="advantages">
             <div class="advantages__wrapper wrapper">
                 <div class="advantages__main">
                     <div class="advantages__inner">
-                        <img src="./img/advantage/photo_advantage.png" alt="photo" class="advantages__img">
                         <img src="./img/advantage/adv_vector.png" alt="oreol" class="advantages__oreol">
-                        <p class="advantages__descr">Мы на рынке более 5-ти лет</p>
                     </div>
                     <div class="advantages__items">
                         <div class="advantages__item_speed">
@@ -163,15 +149,15 @@
                         </div>
                         <div class="advantages__item_cration">
                             <img src="./img/advantage/write.png" alt="creation" class="advantages__item_img">
-                            <p class="advantages__item_par">творчество</p>
+                            <p class="advantages__item_par">пунктуальность</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>  
+        </div>  
 
-        <section class="price">
-            <div class="price__wrapper wrapper">
+        <section class="price" id="priceUS">
+            <div class="wrapper__price wrapper">
                 <h2 class="price__title">Варианты использования</h2>
                 <div class="price__wrapper-card">
                     <div class="price-card">
@@ -179,12 +165,11 @@
                             <h3 class="price-card__title">подписка</h3>
                         </div>
                             <h4 class="price-card__sum">100 грн/мес</h4>
-                            <p class="price-card__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aspernatur eaque rerum sit nihil porro neque sapiente ex possimus quibusdam deserunt voluptates, quasi, pariatur officia repellat illum commodi voluptas mollitia!
-                            Impedit fugit corporis quam pariatur! Explicabo eveniet quidem reiciendis recusandae cupiditate magni ducimus impedit maiores velit est blanditiis neque sint minus autem iure distinctio nulla, eum asperiores enim maxime ipsa.
-                            Cum animi harum illo ipsum ad nostrum alias eum veniam tenetur corporis odit nihil possimus aspernatur et facilis, repudiandae libero, maiores voluptates. Nihil iure expedita temporibus dolor delectus sint ad.
-                            Recusandae odit quibusdam eaque aut commodi. Magni quos ducimus illo atque saepe sequi quam quibusdam! Neque, cupiditate sit laboriosam ea nisi voluptatibus officiis a, maiores non ipsam sed blanditiis ullam!</p>
+                            <p class="price-card__descr">За абонплату в 100 грн/мес вы получаете <br> работающий сервис по интеграции 1С и эквайрингового терминала, <br> поддержку и обновление продукта.
+                                <br>
+                                Наши специалисты прийдут на помощь в любой момент, и помогут решить все возникшие проблемы с интеграцией</p>
     
-                            <button class="price-card__btn btn" data-modal="consultation"type="btn">Выбрать</button>
+                            <button class="price-card__btn btn" type="button" data-modal="consultation">Выбрать</button>
                             
 
                     </div>
@@ -193,17 +178,17 @@
                             <h3 class="price-card__title">приобретение</h3>
                         </div>
                             <h4 class="price-card__sum">80 000 грн</h4>
-                            <p class="price-card__descr">Покупка продукта даёт все примущества ежемесячной подписки, плюс: <br>- использование неограниченного количества терминалов
+                            <p class="price-card__descr">Покупка продукта даёт все преимущества ежемесячной подписки, плюс: <br>- использование неограниченного количества терминалов
                             <br>- бесплатная поддержка в течении 3-х месяцев
                             <br>- возможность самостоятельно вносить изменения в код обработки (передаем полностью исходный код продукта)</p>
     
-                            <button class="price-card__btn btn" data-modal="consultation" type="btn">Выбрать</button>
+                            <button class="price-card__btn btn" type="button" data-modal="consultation">Выбрать</button>
                     </div>
                 </div>
             </div>
         </section> 
 
-        <section class="feedback">
+        <section class="feedback" id="feedUS">
             <div class="feedback__wrapper wrapper">
                 <h2 class="feedback__title">Отзывы наших клиентов</h2>
                 <div class="slider">
@@ -211,64 +196,67 @@
                             <div class="my-slider">
                                 <div class="my-slider__item">
                                     <div class="my-slider__header">
-                                        <img src="./img/feedback/feed_1.png" alt="photo">
+                                        <img src="./img/feedback/feed_icon.png" alt="photo">
                                         <h4 class="my-slider__header_title">
-                                            Malika Fazlieva 
+                                            Василий Бондаренко
                                         </h4>
                                     </div>
                                     <p class="my-slider__descr">
-                                        Маған ұнаған жері білімді жақсы береді. Ұлымның қатынап жүргеніне 1 ай болмады бірақ нәтиже бар. Мұғалімдеріде өте сыпайы әрі білімді.
+                                        Большое спасибо. Работает быстро. Раньше кассиры постоянно путали на какой эквайринговый терминал выбрать. Теперь все работает быстро и нет проблем. Большое спасибо!!!
                                     </p>
                                 </div>
                                 <div class="my-slider__item">
                                     <div class="my-slider__header">
-                                        <img src="./img/feedback/feed_2.png" alt="photo">
+                                        <img src="./img/feedback/feed_icon.png" alt="photo">
                                         <h4 class="my-slider__header_title">
-                                            Aigul Lepessova
+                                            Максим Купринов
                                         </h4>
                                     </div>
                                     <p class="my-slider__descr">
-                                        Отлично все нравится! Внучка уже 6 месяц занимается, довольны
+                                        Большое спасибо компании VR Group
+                                        Предложения от других компаний были в 5-10 раз дороже, сделали все за несколько дней! Работает без проблем. Большое спасибо!
                                     </p>
                                 </div>
                                 <div class="my-slider__item">
                                     <div class="my-slider__header">
-                                        <img src="./img/feedback/feed_3.png" alt="photo">
+                                        <img src="./img/feedback/feed_6.png" alt="photo">
                                         <h4 class="my-slider__header_title">
-                                            Malika Fazlieva 
+                                            Ярох Светлана
                                         </h4>
                                     </div>
                                     <p class="my-slider__descr">
-                                        Маған ұнаған жері білімді жақсы береді. Ұлымның қатынап жүргеніне 1 ай болмады бірақ нәтиже бар. Мұғалімдеріде өте сыпайы әрі білімді.
+                                        Большое спасибо! Давно работаю с этой компанией. Быстрая реакция, всегда на связи, качество работы на высоте. Сначала интегрировали ПРРО на 10 магазинов, а теперь автоматизировали эквайринговые терминалы
     
                                     </p>
                                 </div>
                                 <div class="my-slider__item">
                                     <div class="my-slider__header">
-                                        <img src="./img/feedback/feed_4.png" alt="photo">                              <h4 class="my-slider__header_title">Анара Баймаганбетова</h4>
+                                        <img src="./img/feedback/feed_icon.png" alt="photo">                              <h4 class="my-slider__header_title">Максим Харьковский</h4>
                                     </div>
                                     <p class="my-slider__descr">
-                                        Искренне рекомендую, детям дают отличные знания и безопасность. Профессионалы своего дела. Удачи вам и успехов желаю.
+                                        Сотрудничаем с командой VR GROUP не один год. Решили воспользоваться их решением для эквайринговых терминалов. Ранее использовали другого поставщика услуги, но столкнулись с частыми ошибками на кассе при масштабировании сервиса. VR GROUP быстро оптимизировали и доработали своё решение под нас, на текущий момент продолжаем внедрять и автоматизировать наши кассовые места. Спасибо команде за их работу.
                                     </p>
                                 </div>
                                 <div class="my-slider__item">
                                     <div class="my-slider__header">
-                                        <img src="./img/feedback/feed_5.png" alt="photo">                          <h4 class="my-slider__header_title">
-                                            Gulzhan Kossantayeva
+                                        <img src="./img/feedback/feed_icon.png" alt="photo">                          <h4 class="my-slider__header_title">
+                                            Александр Коваль
                                         </h4>
                                     </div>
                                     <p class="my-slider__descr">
-                                        Комфорная обстановака, распологает к учебе, учителя доброжелательные,но требовательные! То, что надо! Советую 100%.
+                                        Спасибо Большое за данное решение. Теперь не нужно исправлять оперативно  ошибки кассира. Поддержка выдохнула)
                                     </p>
                                 </div>
                                 <div class="my-slider__item">
                                     <div class="my-slider__header">
-                                        <img src="./img/feedback/feed_6.png" alt="photo">                          <h4 class="my-slider__header_title">
-                                            Енлик Серик
+                                        <img src="./img/feedback/feed_icon.png" alt="photo">                          <h4 class="my-slider__header_title">
+                                            Станислав
                                         </h4>
                                     </div>
                                     <p class="my-slider__descr">
-                                        Айжан Талгатовна өз ісінің маманы. Менің қызымның оқу үлгеріміне көп ықпал тигіздіңіз. Кемеңгер мектебі нағыз кеменгер бала тәлімін береді!
+                                        До компанії VR Group двічі зверталися з питанням інтеграції банківського терміналу до нашої програми 1С. Спочатку інтегрували термінали банку Альфа, потім банк Південний.
+                                        В обох випадках задачу хлопці виконали менш ніж за 5 робочих днів. Всі наступні питання, пов’язані з «шліфовкою» процесу виправлялися за 1 робочий день.
+                                        Співробітники постійно на зв’язку, тех. підтримки на високому рівні.
                                     </p>
                                 </div>
                             </div>
@@ -279,16 +267,15 @@
             </div>
         </section>
 
-        <section class="contacts">
+        <section class="contacts" id="contactUS">
             <div class="contacts__wrapper wrapper">
                 <div class="contacts__header">
-                    <img src="./img/contacts/circle.png" class="contacts__header_img" alt="circle"></img >
                     <div class="contacts__info">
                         <h3 class="contacts__title">Наши контакты</h3>
                             <p class="contacts__descr">
                                 Наш контактный номер:
                             </p>
-                            <p class="contacts__descr_thin">8 (098) 586-15-58</p>
+                            <p class="contacts__descr_thin">(098) 586-15-58</p>
                             <p class="contacts__descr">Адрес:</p>
                             <p class="contacts__descr_thin">г. Черноморск, ул.1 Мая, 19</p>
                             <p class="contacts__descr">График работы:</p>
@@ -300,12 +287,11 @@
                     <div class="contacts__header_consultation">
                         <div class="contacts__header_subtitle">Заполните заявку</div>
                         <div class="contacts__header_descr">и мы свяжемся с Вами</div>
-                        <form class="form" action="#" class="feed-form">
+                        <form class="form" method="post">
                             <input name="name" required placeholder="Ваше Имя" type="text">
-                            <input name="phone" required placeholder="Ваш Телефон" type="number">
+                            <input name="phone" required placeholder="Ваш Телефон">
                             <input name="email" required placeholder="Ваш E-mail" type="email">
-
-                            <textarea name="message" id="message" class="message" form  placeholder="Ваше сообщение..." rows="8"></textarea>
+                            <input name="texts" type="text"  class="message" placeholder="Ваше сообщение">
         
                             <button class="modal__btn btn">отправить</button>
                         </form>
@@ -316,8 +302,6 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1638.9591265154356!2d30.634382038758343!3d46.30209737562536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c7c94060b60cdd%3A0x4af69f8a51305464!2z0YPQuy4gMS3Qs9C-INCc0LDRjywgMTksINCn0LXRgNC90L7QvNC-0YDRgdC6LCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgNjgwMDA!5e0!3m2!1sru!2sbe!4v1663765385360!5m2!1sru!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
-                    <img src="./img/contacts/yellow.png" class="contacts__img_yellow"></img src="./img/contacts/light.png" alt="circle">
-                    <img src="./img/contacts/light.png" class="contacts__img_blue"></img src="./img/contacts/light.png" alt="circle">
                 </div>
             </div>
         </section>
@@ -328,10 +312,10 @@
                     <div class="footer__logo"><a href="#"><img src="./img/icons/logo.svg" alt="logo" class="footer__img"></a></div>
                     <div class="footer__menu">
                         <ul class="footer__menu_list">
-                            <li class="footer__menu_item"><a href="#!">О нас</a></li>
-                            <li class="footer__menu_item"><a href="#!">Каталог</a></li>
-                            <li class="footer__menu_item"><a href="#!">Отзывы</a></li>
-                            <li class="footer__menu_item"><a href="#!">Контакты</a></li>
+                            <li class="footer__menu_item"><a href="#aboutUS">О нас</a></li>
+                            <li class="footer__menu_item"><a href="#priceUS">Тарифы</a></li>
+                            <li class="footer__menu_item"><a href="#feedUS">Отзывы</a></li>
+                            <li class="footer__menu_item"><a href="#contactUS">Контакты</a></li>
                         </ul>
                     </div>
                     <div class="footer__copy-right">
@@ -341,25 +325,55 @@
             </div>
         </footer>
 
+        <div class="menu-burger">
+            <div class="menu-burger__block">
+                <div class="menu-burger__close">
+                    <button class="menu-btn btn-burger" type="button">
+                        <span class="btn-line"></span>
+                        <span class="btn-line"></span>
+                        <span class="btn-line"></span>
+                        <span class="btn-line"></span>
+                    </button>
+                </div>
+                <nav>
+                    <ul class="menu-burger__list">
+                        <Li class="menu-burger__link"><a href="#aboutUS">О нас</a></Li>
+                        <Li class="menu-burger__link"><a href="#priceUS">Тарифы</a></Li>
+                        <Li class="menu-burger__link"><a href="#feedUS">Отзывы</a></Li>
+                        <Li class="menu-burger__link"><a href="#contactUS">Контакты</a></Li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-burger__overlay"></div>
+        </div>
+
+
         <div class="overlay hide">
             <div class="modal hide" id="consultation">
                 <div class="modal__close">&times;</div>
                 <div class="modal__subtitle">Заполните форму заявки</div>
                 <div class="modal__descr">и мы свяжемся с Вами</div>
-                <form class="form" action="#" class="feed-form">
+                <form class="form" method="post">
                     <input name="name" required placeholder="Ваше Имя" type="text">
-                    <input name="phone" required placeholder="Ваш Телефон" type="number">
+                    <input name="phone" required placeholder="Ваш Телефон">
                     <input name="email" required placeholder="Ваш E-mail" type="email">
-                    <textarea name="message" id="message" class="message" form  placeholder="Ваше сообщение..." rows="8"></textarea>
+                    <input name="texts" type="text"  class="message" placeholder="Ваше сообщение">
 
-                    <button class="modal__btn btn">отправить</button>
+                    <button class="modal__btn btn" name="submit">отправить</button>
                 </form>
             </div>
         </div>
 
+        <div class="wrapper">
+            <div class="array">
+                <a class="back_to_top" title="Наверх">↑</a>
+            </div>
+        </div>
+
     </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-<script type="module" src="js/main.js"></script>
+<script type="module" src="js/main.min.js"></script>
 
 </body>
 </html>

@@ -18,7 +18,7 @@
     align-items: center;
 
     &_wrapper {
-      
+      width: 50%;
     }
 
     &_wrap-img {
@@ -47,13 +47,14 @@
     }
 
     &_img {
+      border-radius: 50px;
     }
 
     &_borders {
       position: absolute;
       top: 30px;
-      left: 981px;
-      z-index: -1;
+      left: 804px;
+            z-index: -1;
     }
   }
 
@@ -66,17 +67,19 @@
 
 
     &_img {
+      border-radius: 50px;
     }
 
     &_borders {
       position: absolute;
-      top: 29px;
-      left: -31px;
+      top: 31px;
+      left: -50px;
       z-index: -1;
 
     }
 
     &_wrapper {
+      width: 50%;
     }
 
     &_wrap-img {

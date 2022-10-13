@@ -1,19 +1,24 @@
 .header {
     margin-bottom: 127px;
-
     &__wrapper {
         padding-top: 30px;
         text-align: center;
     }
     nav {
         margin-bottom: 40px;
+        width: 100%;
     }
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    &__logo {
+    &__lang{
+        cursor: pointer;
+        transition: all .5s ease;
+        &:hover{
+            transform: scale(1.2);
+        }
     }
 
     &__items {
@@ -27,6 +32,7 @@
     }
 
     &__phone {
+        margin-right: 30px;
         img {
             margin-right: 8px;
             transition: all .5s;
@@ -49,6 +55,7 @@
 
     &__content {
         max-height: 749px;
+        
 
         
     }
@@ -69,24 +76,24 @@
         }
         &_book{
             position: relative;
-            top: -565px;
-            left: 25px;
+            top: -626px;
+            left: 25px;        
         }
         &_five{
             position: relative;
-            top: -371px;
-            left: 231px;
+            top: -706px;
+            left: 465px;
             z-index: -20;
         }
         &_pen {
             position: relative;
-            top: -845px;
-            left: 408px;
+            top: -807px;
+            left: 68px;
         }
         &_books {
             position: relative;
-            top: -1003px;
-            left: 559px;
+            top: -1367px;
+            left: 602px;
             z-index: -20;
         }
     }
@@ -110,7 +117,7 @@
         max-width: 530px;
         font-size: 24px;
         line-height: 29px;
-        margin-bottom: 44px;
+        margin-bottom: -31px;
     }
 
     &__btn {
@@ -132,8 +139,11 @@
     &__present {
         max-height: 749px;
         position: relative;
-        img {
-            margin-right: 35px;
+        &_main{
+            position: relative;
+            top: -9px;
+            left: 64px;
+            transform: skew(-2deg);
         }
         &_img {
             position: relative;
